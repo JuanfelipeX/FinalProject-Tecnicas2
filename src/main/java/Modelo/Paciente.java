@@ -3,7 +3,7 @@ package Modelo;
 public class Paciente extends Persona{
     
     private String enfermedadPrincipal;
-    private int numeroPaciente;
+    private int numeroPaciente;  //contador 
     private boolean estado;  //true se encuentra bien el paciente, false paciente se encuentra mal
     private int temperatura;
     private String sintomas;
