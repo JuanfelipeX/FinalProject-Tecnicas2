@@ -6,8 +6,8 @@ public class PacienteFatal extends Paciente{
     private boolean necesitaSillaRuedas; 
     private boolean tieneCovid;
 
-    public PacienteFatal(boolean necesitaOxigeno, boolean necesitaSillaRuedas, boolean tieneCovid, String enfermedadPrincipal, int numeroPaciente, boolean estado, String nombre, int id, int peso, float estatura, int edad) {
-        super(enfermedadPrincipal, numeroPaciente, estado, nombre, id, peso, estatura, edad);
+    public PacienteFatal(boolean necesitaOxigeno, boolean necesitaSillaRuedas, boolean tieneCovid, String enfermedadPrincipal, int numeroPaciente, boolean estado, int temperatura, String sintomas, String nombre, int id, int peso, float estatura, int edad) {
+        super(enfermedadPrincipal, numeroPaciente, estado, temperatura, sintomas, nombre, id, peso, estatura, edad);
         this.necesitaOxigeno = necesitaOxigeno;
         this.necesitaSillaRuedas = necesitaSillaRuedas;
         this.tieneCovid = tieneCovid;
