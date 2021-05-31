@@ -52,6 +52,14 @@ public class PanelPersona extends javax.swing.JFrame {
         listaPersonasPanel = new javax.swing.JPanel();
         listaPersonasLabel = new javax.swing.JLabel();
         guardarButton = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        ArchivojMenu = new javax.swing.JMenu();
+        GuardarjMenuItem = new javax.swing.JMenuItem();
+        siguientejMenuItem = new javax.swing.JMenuItem();
+        regresarjMenuItem = new javax.swing.JMenuItem();
+        RegistrosjMenu = new javax.swing.JMenu();
+        menuPrincipaljMenuItem = new javax.swing.JMenuItem();
+        ingresarPersonajMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -371,19 +379,19 @@ public class PanelPersona extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(tituloPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(nombrePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(listaPersonasPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 14, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                         .addComponent(siguienteButton, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(25, Short.MAX_VALUE))
+                        .addContainerGap(24, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(idPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(26, 26, 26)
@@ -396,6 +404,41 @@ public class PanelPersona extends javax.swing.JFrame {
                         .addComponent(guardarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
+
+        ArchivojMenu.setText("Archivo");
+
+        GuardarjMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        GuardarjMenuItem.setText("Guardar");
+        ArchivojMenu.add(GuardarjMenuItem);
+
+        siguientejMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        siguientejMenuItem.setText("Siguiente");
+        ArchivojMenu.add(siguientejMenuItem);
+
+        regresarjMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        regresarjMenuItem.setText("Regresar");
+        ArchivojMenu.add(regresarjMenuItem);
+
+        jMenuBar1.add(ArchivojMenu);
+
+        RegistrosjMenu.setText("Registros");
+
+        menuPrincipaljMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
+        menuPrincipaljMenuItem.setText("Menu Principal");
+        menuPrincipaljMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuPrincipaljMenuItemActionPerformed(evt);
+            }
+        });
+        RegistrosjMenu.add(menuPrincipaljMenuItem);
+
+        ingresarPersonajMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
+        ingresarPersonajMenuItem.setText("Registrar Paciente");
+        RegistrosjMenu.add(ingresarPersonajMenuItem);
+
+        jMenuBar1.add(RegistrosjMenu);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -445,6 +488,10 @@ public class PanelPersona extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_guardarButtonActionPerformed
 
+    private void menuPrincipaljMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuPrincipaljMenuItemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuPrincipaljMenuItemActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -482,8 +529,11 @@ public class PanelPersona extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu ArchivojMenu;
     private javax.swing.JPanel EstaturaPanel;
+    private javax.swing.JMenuItem GuardarjMenuItem;
     private javax.swing.JLabel Kglabel;
+    private javax.swing.JMenu RegistrosjMenu;
     private javax.swing.JTextField edadJTextField;
     private javax.swing.JLabel edadLabel;
     private javax.swing.JPanel edadPanel;
@@ -491,30 +541,26 @@ public class PanelPersona extends javax.swing.JFrame {
     private javax.swing.JLabel estauraLabel;
     private javax.swing.JButton guardarButton;
     private javax.swing.JTextField idJTextField;
-    private javax.swing.JTextField idJTextField2;
-    private javax.swing.JTextField idJTextField3;
     private javax.swing.JLabel idLabel;
-    private javax.swing.JLabel idLabel2;
-    private javax.swing.JLabel idLabel3;
     private javax.swing.JPanel idPanel;
-    private javax.swing.JPanel idPanel2;
-    private javax.swing.JPanel idPanel3;
+    private javax.swing.JMenuItem ingresarPersonajMenuItem;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel listaPersonasLabel;
     private javax.swing.JPanel listaPersonasPanel;
     private javax.swing.JTextArea listaPersonasjTextArea;
+    private javax.swing.JMenuItem menuPrincipaljMenuItem;
     private javax.swing.JLabel metrosLabel;
     private javax.swing.JTextField nombreJTextField;
-    private javax.swing.JTextField nombreJTextField1;
     private javax.swing.JLabel nombreLabel;
-    private javax.swing.JLabel nombreLabel1;
     private javax.swing.JPanel nombrePanel;
-    private javax.swing.JPanel nombrePanel1;
     private javax.swing.JTextField pesoJTextField;
     private javax.swing.JLabel pesoLabel;
     private javax.swing.JPanel pesoPanel;
+    private javax.swing.JMenuItem regresarjMenuItem;
     private javax.swing.JButton siguienteButton;
+    private javax.swing.JMenuItem siguientejMenuItem;
     private javax.swing.JLabel tituloLabel;
     private javax.swing.JPanel tituloPanel;
     // End of variables declaration//GEN-END:variables

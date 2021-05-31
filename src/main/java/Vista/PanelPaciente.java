@@ -67,6 +67,13 @@ public class PanelPaciente extends javax.swing.JFrame {
         ListaPacientesjLabel = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         listaPacientesjTextArea = new javax.swing.JTextArea();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        archivojMenu = new javax.swing.JMenu();
+        guardarjMenuItem = new javax.swing.JMenuItem();
+        regresarjMenuItem = new javax.swing.JMenuItem();
+        registrosjMenu = new javax.swing.JMenu();
+        menuPrincipaljMenuItem = new javax.swing.JMenuItem();
+        ingresarPersonaMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -511,8 +518,34 @@ public class PanelPaciente extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(GuardarjButton, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
+
+        archivojMenu.setText("Archivo");
+
+        guardarjMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        guardarjMenuItem.setText("Guardar");
+        archivojMenu.add(guardarjMenuItem);
+
+        regresarjMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        regresarjMenuItem.setText("Regresar");
+        archivojMenu.add(regresarjMenuItem);
+
+        jMenuBar1.add(archivojMenu);
+
+        registrosjMenu.setText("Registros");
+
+        menuPrincipaljMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
+        menuPrincipaljMenuItem.setText("Menu Principal");
+        registrosjMenu.add(menuPrincipaljMenuItem);
+
+        ingresarPersonaMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F2, 0));
+        ingresarPersonaMenuItem.setText("Registrar Persona");
+        registrosjMenu.add(ingresarPersonaMenuItem);
+
+        jMenuBar1.add(registrosjMenu);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -596,6 +629,7 @@ public class PanelPaciente extends javax.swing.JFrame {
     private javax.swing.JLabel PreguntajLabel;
     private javax.swing.JButton RegresarButton;
     private javax.swing.JPanel SIllaRuedasjPanel;
+    private javax.swing.JMenu archivojMenu;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
@@ -603,13 +637,19 @@ public class PanelPaciente extends javax.swing.JFrame {
     private javax.swing.JLabel enfermedadPrinLabel;
     private javax.swing.JPanel enfermedadPrincipalPanel;
     private javax.swing.JRadioButton fatalNojRadioButton;
+    private javax.swing.JMenuItem guardarjMenuItem;
+    private javax.swing.JMenuItem ingresarPersonaMenuItem;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel listaPacientesjPanel;
     private javax.swing.JTextArea listaPacientesjTextArea;
+    private javax.swing.JMenuItem menuPrincipaljMenuItem;
     private javax.swing.JTextField nombreEnfermedadjTextField;
+    private javax.swing.JMenu registrosjMenu;
+    private javax.swing.JMenuItem regresarjMenuItem;
     public static javax.swing.JRadioButton sillaRuedasNoRadioButton;
     public static javax.swing.JRadioButton sillaRuedasSijRadioButton;
     private javax.swing.JTextField sintomasJtextFIeld;
