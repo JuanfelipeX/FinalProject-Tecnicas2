@@ -16,6 +16,10 @@ public class Paciente extends Persona{
         this.temperatura = temperatura;
         this.sintomas = sintomas;
     }
+    
+    public Paciente(){
+        
+    }
 
     public String getEnfermedadPrincipal() {
         return enfermedadPrincipal;
@@ -56,5 +60,4 @@ public class Paciente extends Persona{
     public void setSintomas(String sintomas) {
         this.sintomas = sintomas;
     }
-    
 }
