@@ -12,6 +12,10 @@ public class PacienteFatal extends Paciente{
         this.necesitaSillaRuedas = necesitaSillaRuedas;
         this.tieneCovid = tieneCovid;
     }
+    
+    public PacienteFatal(){
+        
+    }
 
     public boolean isNecesitaOxigeno() {
         return necesitaOxigeno;
@@ -36,6 +40,5 @@ public class PacienteFatal extends Paciente{
     public void setTieneCovid(boolean tieneCovid) {
         this.tieneCovid = tieneCovid;
     }
-    
-    
+
 }
