@@ -3,7 +3,7 @@ package Modelo;
 public class Persona {
 
     private String nombre;
-    private static int id;  //static
+    private int id;  //static
     private int peso;
     private float estatura;
     private int edad;
@@ -23,10 +23,6 @@ public class Persona {
         return nombre;
     }
 
-    public static int getId() {
-        return id;
-    }
-
     public int getPeso() {
         return peso;
     }
@@ -43,8 +39,8 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public static void setId(int id) {
-        Persona.id = id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setPeso(int peso) {
@@ -58,5 +54,4 @@ public class Persona {
     public void setEdad(int edad) {
         this.edad = edad;
     }
-    
 }
