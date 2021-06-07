@@ -476,8 +476,7 @@ public class PanelPersona extends javax.swing.JFrame {
     }                                              
 
     private void siguienteButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
-        PanelPaciente panel = new PanelPaciente();
-        panel.setVisible(true);
+        new PanelPaciente().setVisible(true);
     }                                               
 
     private void guardarButtonActionPerformed(java.awt.event.ActionEvent evt) {                                              
