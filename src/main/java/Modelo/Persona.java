@@ -42,6 +42,10 @@ public class Persona {
     public void setId(int id) {
         this.id = id;
     }
+    
+    public int getId() {
+        return id;
+    }
 
     public void setPeso(int peso) {
         this.peso = peso;
