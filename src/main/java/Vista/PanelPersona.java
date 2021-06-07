@@ -486,6 +486,11 @@ public class PanelPersona extends javax.swing.JFrame {
         this.personaAux.setPeso(Integer.parseInt(this.edadJTextField.getText()));
         this.personaAux.setEstatura(Float.parseFloat(this.estauraJTextField.getText()));
         listaPersona.add(personaAux);
+        String mensaje = "Se ha ingresado la persona"+
+                "\nNombre: "+this.personaAux.getNombre()+
+                "\nIdentidicacion: "+this.personaAux.getId()+
+                "\nEdad: "+this.personaAux.getEdad();
+        this.listaPersonasjTextArea.setText(mensaje);
     }                                             
 
     private void menuPrincipaljMenuItemActionPerformed(java.awt.event.ActionEvent evt) {                                                       
