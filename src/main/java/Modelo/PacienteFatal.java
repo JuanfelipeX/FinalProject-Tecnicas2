@@ -41,4 +41,8 @@ public class PacienteFatal extends Paciente{
         this.tieneCovid = tieneCovid;
     }
 
+    @Override
+    public String toString() {
+        return "Paciente Fatal{" + "necesitaOxigeno=" + necesitaOxigeno + ", necesitaSillaRuedas=" + necesitaSillaRuedas + ", tieneCovid=" + tieneCovid + '}';
+    }
 }
