@@ -365,6 +365,11 @@ public class PanelPaciente extends javax.swing.JFrame {
         RegresarButton.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         RegresarButton.setForeground(new java.awt.Color(1, 1, 1));
         RegresarButton.setText("Regresar");
+        RegresarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegresarButtonActionPerformed(evt);
+            }
+        });
 
         BuscaIDjPanel.setBackground(new java.awt.Color(254, 254, 254));
         BuscaIDjPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
@@ -576,6 +581,10 @@ public class PanelPaciente extends javax.swing.JFrame {
     private void OxigenoSIjRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OxigenoSIjRadioButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_OxigenoSIjRadioButtonActionPerformed
+
+    private void RegresarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegresarButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RegresarButtonActionPerformed
 
     /**
      * @param args the command line arguments

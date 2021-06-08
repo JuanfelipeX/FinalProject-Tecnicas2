@@ -125,13 +125,13 @@
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace pref="25" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="nombrePanel" max="32767" attributes="0"/>
-                                  <Component id="idPanel" max="32767" attributes="0"/>
-                                  <Group type="102" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="nombrePanel" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="idPanel" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
                                       <Component id="edadPanel" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="pesoPanel" max="32767" attributes="0"/>
@@ -151,7 +151,7 @@
                       <Component id="jScrollPane1" alignment="1" min="-2" pref="272" max="-2" attributes="0"/>
                       <Component id="listaPersonasPanel" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="25" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
@@ -167,23 +167,23 @@
                   <Component id="tituloPanel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="nombrePanel" min="-2" max="-2" attributes="0"/>
-                      <Component id="listaPersonasPanel" min="-2" max="-2" attributes="0"/>
+                      <Component id="nombrePanel" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="listaPersonasPanel" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <Component id="jScrollPane1" min="-2" pref="280" max="-2" attributes="0"/>
-                          <EmptySpace pref="15" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                           <Component id="siguienteButton" min="-2" pref="54" max="-2" attributes="0"/>
-                          <EmptySpace pref="24" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <Component id="idPanel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="edadPanel" max="32767" attributes="0"/>
-                              <Component id="pesoPanel" max="32767" attributes="0"/>
+                              <Component id="edadPanel" alignment="0" max="32767" attributes="0"/>
+                              <Component id="pesoPanel" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                           <Component id="EstaturaPanel" min="-2" max="-2" attributes="0"/>
@@ -345,8 +345,8 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="idJTextField" max="32767" attributes="0"/>
-                          <Component id="idLabel" max="32767" attributes="0"/>
+                          <Component id="idJTextField" alignment="1" max="32767" attributes="0"/>
+                          <Component id="idLabel" alignment="1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
