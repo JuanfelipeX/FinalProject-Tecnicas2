@@ -42,10 +42,6 @@ public class Persona {
     public void setId(int id) {
         this.id = id;
     }
-    
-    public int getId() {
-        return id;
-    }
 
     public void setPeso(int peso) {
         this.peso = peso;
@@ -57,5 +53,10 @@ public class Persona {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", id=" + id + ", peso=" + peso + ", estatura=" + estatura + ", edad=" + edad + '}';
     }
 }
