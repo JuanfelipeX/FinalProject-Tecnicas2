@@ -60,4 +60,9 @@ public class Paciente extends Persona{
     public void setSintomas(String sintomas) {
         this.sintomas = sintomas;
     }
+
+    @Override
+    public String toString() {
+        return "Paciente{" + "enfermedadPrincipal=" + enfermedadPrincipal + ", numeroPaciente=" + numeroPaciente + ", estado=" + estado + ", temperatura=" + temperatura + ", sintomas=" + sintomas + '}';
+    }
 }
