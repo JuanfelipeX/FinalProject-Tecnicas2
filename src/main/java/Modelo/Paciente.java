@@ -63,6 +63,6 @@ public class Paciente extends Persona{
 
     @Override
     public String toString() {
-        return "Paciente{" + "enfermedadPrincipal=" + enfermedadPrincipal + ", numeroPaciente=" + numeroPaciente + ", estado=" + estado + ", temperatura=" + temperatura + ", sintomas=" + sintomas + '}';
+        return "El Paciente: "+nombre+ "\nEnfermedad Principal: " + enfermedadPrincipal + "\nNumero Paciente: " + numeroPaciente + "\nEstado: " + estado + "\nTemperatura: " + temperatura + "\nSintomas: " + sintomas ;
     }
 }
