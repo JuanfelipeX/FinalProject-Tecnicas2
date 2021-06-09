@@ -1,6 +1,8 @@
 package Vista;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class PanelBienvenida extends JFrame {
@@ -20,16 +22,29 @@ public class PanelBienvenida extends JFrame {
         this.lblNombreClinica = new JLabel("BIENVENIDO A LA CLINICA");
         this.jpnDatos.add(this.lblNombreClinica);
         this.lblNombreClinica.setFont(new Font("Bold Italic", Font.PLAIN, 18));
-        JButton boton = new JButton("Siguente");
-        boton.setBounds(100, 100, 80, 40);
-        this.jpnDatos.add(boton);
+        this.btnSiguiente = new JButton("Siguente");
+        this.btnSiguiente.setBounds(200, 210, 100, 80);
+        this.fondo.add(this.btnSiguiente);
+        
+        ActionListener oyente =new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+               new Panelpersona().setVisible(true);
+            }
+        };
+        
+        this.btnSiguiente.addActionListener(oyente);
+        
+        
         jpnDatos.setSize(500,500);
         jpnDatos.setVisible(true);
-        
-        this.getContentPane().setLayout(new BorderLayout());
+                     
+       this.getContentPane().setLayout(new BorderLayout());
         add(jpnDatos, BorderLayout.NORTH);
+           
     }
-
+    
+    
     class FondoPanel extends JPanel {
 
         private Image imagen;
@@ -46,4 +61,5 @@ public class PanelBienvenida extends JFrame {
     public static void main(String[] args) {
         new PanelBienvenida().setVisible(true);
     }
+
 }
