@@ -7,6 +7,8 @@ import javax.swing.*;
 
 public class PanelBienvenida extends JFrame {
 
+    static PanelBienvenida bienvenida = new PanelBienvenida(); 
+    
     FondoPanel fondo = new FondoPanel();
 
     JPanel jpnDatos;
@@ -22,14 +24,15 @@ public class PanelBienvenida extends JFrame {
         this.lblNombreClinica = new JLabel("BIENVENIDO A LA CLINICA");
         this.jpnDatos.add(this.lblNombreClinica);
         this.lblNombreClinica.setFont(new Font("Bold Italic", Font.PLAIN, 18));
-        this.btnSiguiente = new JButton("Siguente");
-        this.btnSiguiente.setBounds(200, 210, 100, 80);
+        this.btnSiguiente = new JButton("OPRIMA ESTE BOTON");//registrar
+        this.btnSiguiente.setBounds(150, 210, 200, 40);
         this.fondo.add(this.btnSiguiente);
         
         ActionListener oyente =new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                new Panelpersona().setVisible(true);
+               bienvenida.setVisible(false);
             }
         };
         
@@ -59,7 +62,7 @@ public class PanelBienvenida extends JFrame {
     }
 
     public static void main(String[] args) {
-        new PanelBienvenida().setVisible(true);
+        bienvenida.setVisible(true);
     }
 
 }
