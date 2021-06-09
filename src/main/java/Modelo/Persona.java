@@ -2,11 +2,11 @@ package Modelo;
 
 public class Persona {
 
-    private String nombre;
-    private int id;  //static
-    private int peso;
-    private float estatura;
-    private int edad;
+    protected String nombre;
+    protected int id;  //static
+    protected int peso;
+    protected float estatura;
+    protected int edad;
 
     public Persona(String nombre, int id, int peso, float estatura, int edad) {
         this.nombre = nombre;
@@ -57,6 +57,6 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", id=" + id + ", peso=" + peso + ", estatura=" + estatura + ", edad=" + edad + '}';
+        return "La Persona:" + nombre + "\nIdentificacion: " + id + "\nPeso: " + peso + "\nEstatura: " + estatura + "\nEdad: " + edad ;
     }
 }
