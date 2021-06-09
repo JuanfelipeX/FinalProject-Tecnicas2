@@ -43,6 +43,6 @@ public class PacienteFatal extends Paciente{
 
     @Override
     public String toString() {
-        return "Paciente Fatal{" + "necesitaOxigeno=" + necesitaOxigeno + ", necesitaSillaRuedas=" + necesitaSillaRuedas + ", tieneCovid=" + tieneCovid + '}';
+        return "Paciente Fatal:"+nombre + "\nNecesita Oxigeno: " + necesitaOxigeno + "\nNecesita silla de ruedas: " + necesitaSillaRuedas + "\nTiene Covid:" + tieneCovid ;
     }
 }
