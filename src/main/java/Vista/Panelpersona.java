@@ -2,14 +2,15 @@ package Vista;
 
 import Modelo.Persona;
 import java.util.ArrayList;
+import javax.swing.*;
 
-public class PanelPersona extends javax.swing.JFrame {
+public class Panelpersona extends javax.swing.JFrame {
     
     static ArrayList<Persona> listaPersona = new ArrayList<>();
     Persona personaAux = new Persona();
 
     /** Creates new form vista */
-    public PanelPersona() {
+    public Panelpersona() {
         initComponents();
     }
 
@@ -487,9 +488,9 @@ public class PanelPersona extends javax.swing.JFrame {
         listaPersona.add(personaAux);
         this.listaPersonasjTextArea.append(personaAux.toString() + "\n");
         }catch(Exception e){
-          this.listaPersonasjTextArea.append("Por favor diligencie correctamente el formulario\n");  
+          JOptionPane.showMessageDialog(null, "Por favor diligencie el formulario correctamente");  
         }
-    }                                              
+    }                                             
 
     private void menuPrincipaljMenuItemActionPerformed(java.awt.event.ActionEvent evt) {                                                       
         // TODO add your handling code here:
