@@ -477,7 +477,8 @@ public class PanelPersona extends javax.swing.JFrame {
         this.dispose();
     }                                               
 
-    private void guardarButtonActionPerformed(java.awt.event.ActionEvent evt) {                                              
+    private void guardarButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        try{
         this.personaAux.setNombre(this.nombreJTextField.getText());
         this.personaAux.setId(Integer.parseInt(this.idJTextField.getText()));
         this.personaAux.setEdad(Integer.parseInt(this.edadJTextField.getText()));
@@ -485,7 +486,10 @@ public class PanelPersona extends javax.swing.JFrame {
         this.personaAux.setEstatura(Float.parseFloat(this.estauraJTextField.getText()));
         listaPersona.add(personaAux);
         this.listaPersonasjTextArea.append(personaAux.toString() + "\n");
-    }                                             
+        }catch(Exception e){
+          this.listaPersonasjTextArea.append("Por favor diligencie correctamente el formulario\n");  
+        }
+    }                                              
 
     private void menuPrincipaljMenuItemActionPerformed(java.awt.event.ActionEvent evt) {                                                       
         // TODO add your handling code here:
