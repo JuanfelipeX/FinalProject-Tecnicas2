@@ -582,10 +582,14 @@ public class PanelPaciente extends javax.swing.JFrame {
         this.dispose();
     }                                              
 
+    int i = 0;
+    
     private void GuardarjButtonActionPerformed(java.awt.event.ActionEvent evt) {                                               
        try {
         if(this.fatalNojRadioButton.isSelected() == true){
+            i += 1;
             this.pacienteAux.setId(Integer.parseInt(this.BuscarIdjTextField.getText()));
+            this.pacienteAux.setNumeroPaciente(i);
             this.pacienteAux.setEnfermedadPrincipal(this.nombreEnfermedadjTextField.getText());
             this.pacienteAux.setSintomas(this.sintomasJtextFIeld.getText());
             this.pacienteAux.setTemperatura(Integer.parseInt(this.temperaturajTextField.getText()));
@@ -602,7 +606,7 @@ public class PanelPaciente extends javax.swing.JFrame {
        }catch (Exception e){
            this.listaPacientesjTextArea.append("Por favor diligencie el formulario correctamente\n");
        }  
-    }                                              
+    }                                             
 
     
     /**
