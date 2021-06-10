@@ -595,7 +595,6 @@ public class PanelPaciente extends javax.swing.JFrame {
             } else {
                 if (this.fatalNojRadioButton.isSelected() == true) {
                     i += 1;
-
                     this.pacienteAux.setNombre(nombre);
                     this.pacienteAux.setId(Integer.parseInt(this.BuscarIdjTextField.getText()));
                     this.pacienteAux.setNumeroPaciente(i);
@@ -607,6 +606,21 @@ public class PanelPaciente extends javax.swing.JFrame {
 
                 } else if (this.FatalSijRadioButton.isSelected() == true) {
 
+                    if(this.sillaRuedasSijRadioButton.isSelected() == true){
+                        this.pacienteFAux.setNecesitaSillaRuedas(true);
+                    }else{
+                        this.pacienteFAux.setNecesitaSillaRuedas(false);
+                    }
+                    if(this.OxigenoSijRadioButton.isSelected() == true){
+                        this.pacienteFAux.setNecesitaOxigeno(true);
+                    }else{
+                       this.pacienteFAux.setNecesitaOxigeno(false); 
+                    }
+                    if(this.OxigenoNojRadioButton.isSelected() == true){
+                        this.pacienteFAux.setTieneCovid(false);
+                    }else{
+                        this.pacienteFAux.setTieneCovid(true);
+                    }
                     this.pacienteFAux.setNombre(nombre);
                     this.pacienteFAux.setId(Integer.parseInt(this.BuscarIdjTextField.getText()));
                     this.pacienteFAux.setEnfermedadPrincipal(this.nombreEnfermedadjTextField.getText());
